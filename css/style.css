@@ -1,0 +1,50 @@
+:root {
+  /*Colors*/
+  --primary-color: #013220;
+  --secondary-color: #daf1de;
+
+  /*Font family*/
+  --font-family: "Inter", sans-serif;
+
+  /*Sizes*/
+  --base-size: 0.5rem;
+  --sm-size: 1rem;
+  --md-size: 1.2rem;
+  --lg-size: 1.5rem;
+  --xlg-size: 1.8rem;
+  --xxlg-size: 2rem;
+}
+
+/* resets*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
