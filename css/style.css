@@ -2,6 +2,8 @@
   /*Colors*/
   --primary-color: #013220;
   --secondary-color: #daf1de;
+  --white-color: #fff;
+  --black-color: #000;
 
   /*Font family*/
   --font-family: "Inter", sans-serif;
@@ -32,19 +34,149 @@ html {
 body {
   font-family: var(--font-family);
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.2;
   box-sizing: border-box;
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+  font-size: var(--md-size);
 }
 
 ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
 
-img {
+/* Generic styles */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: capitalize;
+  color: var(--black-color);
+  font-size: var(--md-size);
+  padding: var(--md-size) var(--xlg-size);
+}
+/* Header */
+
+#wrapper {
   width: 100%;
   height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+.header .navbar {
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 20;
+  padding: var(--lg-size) calc(var(--lg-size) * 3);
+}
+
+.header .navbar .navbar__col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar__list > .navbar__list-items {
+  display: inline-block;
+  margin: 0 var(--lg-size);
+}
+
+.navbar .navbar__list > .navbar__list-items a {
+  text-transform: capitalize;
+  color: var(--black-color);
+}
+
+.navbar .navbar__btn {
+  margin-left: 2rem;
+}
+
+.navbar .navbar__btn .btn--signUp {
+  border: 1px solid var(--black-color);
+  padding: var(--md-size) var(--lg-size);
+  margin-right: 1rem;
+}
+
+.navbar .navbar__btn .btn--learnMore {
+  color: var(--secondary-color);
+  background-color: var(--black-color);
+  padding: var(--md-size) var(--lg-size);
+}
+/* hero section */
+
+.hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero .hero__overlay {
+  height: 100vh;
+  background-image: linear-gradient(120deg, #01322075, #01322036),
+    url("/img/loft-authentic-dining-room-interior-design-with-picture-frame_53876-111114.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .hero__content {
+  position: absolute;
+  top: 38%;
+  left: 30%;
+  right: 0;
+}
+
+.hero .hero__content .hero__heading-main {
+  font-size: calc(var(--xxlg-size) * 2.5);
+  font-weight: 900;
+  text-transform: capitalize;
+  width: 100%;
+  max-width: 70rem;
+}
+
+.hero__content .hero__heading-main > .hero__heading-primary {
+  margin-left: 3rem;
+  font-size: calc(var(--xxlg-size) * 2.4);
+}
+
+.hero__content .hero__heading-main > .hero__heading-secondary {
+  margin-left: 16rem;
+  font-size: calc(var(--xxlg-size) * 2.4);
+}
+
+.hero .hero__content .hero__paragraph {
+  margin: 3rem 0;
+  font-size: var(--lg-size);
+}
+
+.hero__content > .hero__btn .btn.btn--shop {
+  background-color: var(--black-color);
+  color: var(--secondary-color);
+  margin-left: 23rem;
+}
+
+.hero__content > .hero__btn .btn.btn--learn-more {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  margin: 0rem 3rem;
 }
