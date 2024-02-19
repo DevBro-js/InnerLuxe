@@ -103,20 +103,18 @@ a {
   font-size: 2rem;
   color: #daf1de;
   margin: 0 10px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .navbar__col-1 h1 {
   position: flex;
   font-size: 3rem;
   color: #daf1de;
-
 }
 
-.navbar-icon a:hover{
+.navbar-icon a:hover {
   transform: translateY(-5px) scale(1.1);
 }
-
 
 .header .navbar .navbar__col-2 {
   display: flex;
@@ -130,7 +128,7 @@ a {
 
 .navbar .navbar__list > .navbar__list-items a {
   text-transform: capitalize;
-  color: #DAF1DE;
+  color: #daf1de;
 }
 
 .navbar .navbar__btn {
@@ -158,7 +156,11 @@ a {
 
 .hero .hero__overlay {
   height: 100vh;
-  background-image: linear-gradient(0deg, rgba(1, 50, 32, 0.7), rgba(1, 50, 32, 0.7)),
+  background-image: linear-gradient(
+      0deg,
+      rgba(1, 50, 32, 0.7),
+      rgba(1, 50, 32, 0.7)
+    ),
     url("/img/loft-authentic-dining-room-interior-design-with-picture-frame_53876-111114.jpg.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,8 +168,9 @@ a {
 
 .hero .hero__content {
   position: absolute;
-  top: 38%;
-  left: 30%;
+  height: 100%;
+  top: 10%;
+  left: 0;
   right: 0;
 }
 
@@ -192,19 +195,34 @@ a {
   color: #daf1de;
 }
 
+.hero__content .hero__content-row-1 {
+  width: max-content;
+  transform: translate(-20rem, 18rem);
+  opacity: 0;
+  animation: slideRight 800ms ease-in-out both;
+}
+
+.hero__content .hero__content-row-2 {
+  width: max-content;
+  transform: translate(40rem, 40rem);
+  opacity: 0;
+  animation: moveUp 800ms linear both;
+}
+
 .hero .hero__content .hero__paragraph {
   margin: 3rem 0;
   font-size: var(--lg-size);
   color: #daf1de;
 }
 
-.hero__content > .hero__btn .btn.btn--shop {
+.hero__content .hero__content-row-2 > .hero__btn .btn.btn--shop {
   background-color: var(--black-color);
   color: var(--secondary-color);
   margin-left: 23rem;
+  box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.8);
 }
 
-.hero__content > .hero__btn .btn.btn--learn-more {
+.hero__content .hero__content-row-2 > .hero__btn .btn.btn--learn-more {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   margin: 0rem 3rem;
@@ -237,14 +255,14 @@ a {
 /* Animation */
 @keyframes moveUp {
   100% {
-    transform: translate(40rem, 14.5rem);
+    transform: translate(40rem, 18rem);
     opacity: 1;
   }
 }
 
-@keyframes slideRIght {
+@keyframes slideRight {
   100% {
-    transform: translate(40rem, 15rem);
+    transform: translate(40rem, 18rem);
     opacity: 1;
   }
 }
