@@ -79,7 +79,7 @@ a {
 }
 
 .header .navbar {
-  background-color: var(--white-color);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,6 +93,31 @@ a {
   padding: var(--lg-size) calc(var(--lg-size) * 3);
 }
 
+.navbar-icon {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon a {
+  display: inline-block;
+  font-size: 2rem;
+  color: #daf1de;
+  margin: 0 10px;
+  transition: all .4s;
+}
+
+.navbar__col-1 h1 {
+  position: flex;
+  font-size: 3rem;
+  color: #daf1de;
+
+}
+
+.navbar-icon a:hover{
+  transform: translateY(-5px) scale(1.1);
+}
+
+
 .header .navbar .navbar__col-2 {
   display: flex;
   justify-content: center;
@@ -105,7 +130,7 @@ a {
 
 .navbar .navbar__list > .navbar__list-items a {
   text-transform: capitalize;
-  color: var(--black-color);
+  color: #DAF1DE;
 }
 
 .navbar .navbar__btn {
@@ -133,7 +158,7 @@ a {
 
 .hero .hero__overlay {
   height: 100vh;
-  background-image: linear-gradient(120deg, #01322075, #01322036),
+  background-image: linear-gradient(0deg, rgba(1, 50, 32, 0.7), rgba(1, 50, 32, 0.7)),
     url("/img/loft-authentic-dining-room-interior-design-with-picture-frame_53876-111114.jpg.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,18 +166,9 @@ a {
 
 .hero .hero__content {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 10rem;
-  left: 0;
+  top: 38%;
+  left: 30%;
   right: 0;
-}
-
-.hero__content .hero__content-row-1 {
-  transform: translate(-30rem, 15rem);
-  width: 100%;
-  opacity: 0;
-  animation: slideRIght 1s ease-in-out forwards;
 }
 
 .hero .hero__content .hero__heading-main {
@@ -161,39 +177,37 @@ a {
   text-transform: capitalize;
   width: 100%;
   max-width: 70rem;
-
-  color: var(--secondary-color);
-}
-
-.hero .hero__content .hero__content-row-2 {
-  width: 100%;
-  transform: translate(40rem, 30rem);
-  opacity: 0;
-  animation: moveUp 850ms linear forwards;
+  color: #daf1de;
 }
 
 .hero__content .hero__heading-main > .hero__heading-primary {
   margin-left: 3rem;
   font-size: calc(var(--xxlg-size) * 2.4);
+  color: #daf1de;
 }
 
 .hero__content .hero__heading-main > .hero__heading-secondary {
   margin-left: 16rem;
   font-size: calc(var(--xxlg-size) * 2.4);
+  color: #daf1de;
 }
 
-.hero .hero__content .hero__content-row-2 > .hero__paragraph {
+.hero .hero__content .hero__paragraph {
   margin: 3rem 0;
   font-size: var(--lg-size);
-  color: var(--secondary-color);
+  color: #daf1de;
 }
 
-.hero__content .hero__content-row-2 > .hero__btn .btn.btn--shop {
+.hero__content > .hero__btn .btn.btn--shop {
   background-color: var(--black-color);
   color: var(--secondary-color);
   margin-left: 23rem;
-  box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.8);
-  transition: background 300ms linear;
+}
+
+.hero__content > .hero__btn .btn.btn--learn-more {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  margin: 0rem 3rem;
 }
 
 .hero__content .hero__content-row-2 > .hero__btn .btn.btn--shop:hover {
