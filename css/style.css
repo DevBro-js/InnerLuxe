@@ -213,6 +213,8 @@ a {
   margin: 3rem 0;
   font-size: var(--lg-size);
   color: #daf1de;
+  text-align: center;
+  
 }
 
 .hero__content .hero__content-row-2 > .hero__btn .btn.btn--shop {
@@ -292,10 +294,11 @@ a {
   max-width: 50rem;
 }
 
+
 .section-1 .section-1__col-2 .section-1__col-2__paragraph {
   margin-bottom: 3rem;
   font-size: var(--lg-size);
-
+  
   font-weight: 800;
 }
 
