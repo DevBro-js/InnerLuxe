@@ -316,3 +316,94 @@ a {
   margin-bottom: var(--lg-size);
   font-size: 4rem;
 }
+
+/* Form Box */
+
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #daf1de;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+
+.form-box h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #013220;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #013220;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field {
+  background: #fff;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+.input-field i {
+  margin-left: 15px;
+  color: #013220;
+}
+
+form p {
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+form p a {
+  text-decoration: none;
+  color: #013220;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #013220;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: var(--black-color) 1s;
+}
+
+.btn-field button.sign {
+  background: #fff;
+  color: #013220;
+}
