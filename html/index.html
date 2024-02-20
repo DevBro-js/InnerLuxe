@@ -118,16 +118,23 @@
     </main>
 
     <!--Sign Up Section-->
-    <div class="container">
-      <div class="form-box">
-        <h1 id="newtitle">Sign Up</h1>
-        <form>
-          <div class="input">
-            <div class="input-field" id="nameinput">
-              <i class="bx bxs-user"></i>
-              <input type="text" placeholder="Name" />
-            </div>
-          </div>
+<div class="container">
+  <div class="form-box">
+    <h1 id="newtitle">Sign Up</h1>
+    <form>
+      <div class="input">
+        <div class="input-field" id="nameinput">
+          <i class='bx bxs-user'></i>
+          <input type="text" placeholder="Name">
+        </div>
+      </div>
+
+      <div class="input">
+        <div class="input-field" id="nameinput">
+          <i class='bx bxs-user'></i>
+          <input type="text" placeholder="Gender">
+        </div>
+      </div>
 
           <div class="input">
             <div class="input-field">
@@ -136,19 +143,46 @@
             </div>
           </div>
 
-          <div class="input">
-            <div class="input-field">
-              <i class="bx bxs-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <p>Forgot Password <a href="#">Click Here!</a></p>
-          </div>
-        </form>
-        <div class="btn-field">
-          <button type="button" id="signupbtn">Sign up</button>
-          <button type="button" id="signinbtn" class="sign">Sign in</button>
+      <div class="input">
+        <div class="input-field">
+          <i class='bx bxs-lock'></i>
+          <input type="password" placeholder="Password">
         </div>
+
+        <div class="input">
+          <div class="input-field">
+            <i class='bx bxs-lock'></i>
+            <input type="password" placeholder="Confirm password">
+          </div>
+        <p>Forgot Password <a href="#">Click Here!</a></p>
       </div>
+    </form>
+    <div class="btn-field">
+      <button type="button" id="signupbtn">Sign up</button>
+      <button type="button" id="signinbtn" class="sign">Sign in</button>
     </div>
+  </div>
+</div>
+
+    <script>
+      let signupbtn = document.getElementById("signupbtn");
+      let signinbtn = document.getElementById("signinbtn");
+      let nameinput = document.getElementById("nameinput");
+      let newtitle = document.getElementById("newtitle");
+
+      signinbtn.onclick = function () {
+        nameinput.style.maxHeight = "0";
+        newtitle.innerHTML = "Sign In";
+        signupbtn.classList.add("sign");
+        signinbtn.classList.remove("sign");
+      };
+
+      signupbtn.onclick = function () {
+        nameinput.style.maxHeight = "60px";
+        newtitle.innerHTML = "Sign Up";
+        signupbtn.classList.remove("sign");
+        signinbtn.classList.add("sign");
+      };
+    </script>
   </body>
 </html>
