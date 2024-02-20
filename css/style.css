@@ -42,6 +42,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 ul {
@@ -262,14 +263,14 @@ a {
 /* Animation */
 @keyframes moveUp {
   100% {
-    transform: translate(40rem, 30rem);
+    transform: translate(45rem, 30rem);
     opacity: 1;
   }
 }
 
 @keyframes slideRight {
   100% {
-    transform: translate(48rem, 25rem);
+    transform: translate(55rem, 25rem);
     opacity: 1;
   }
 }
@@ -323,9 +324,17 @@ a {
 
 /* Form Box */
 
+.container {
+  position: absolute;
+  width: 100%;
+
+  top: -10rem;
+}
+
 .form-box {
   width: 100%;
   max-width: 45rem;
+  /* height: 30rem; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -335,16 +344,17 @@ a {
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+  /* overflow: hidden; */
 }
 
-.form-box h1 {
+.form-box h2 {
   font-size: 3rem;
   margin-bottom: 5rem;
   color: #013220;
   position: relative;
 }
 
-.form-box h1::after {
+.form-box h2::after {
   content: "";
   width: 3rem;
   height: 0.4rem;
@@ -354,6 +364,16 @@ a {
   bottom: -1.2rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.close-form {
+  display: inline-block;
+  position: absolute;
+  top: 4rem;
+  font-size: var(--xlg-size);
+  right: 5rem;
+  cursor: pointer;
+  color: #777;
 }
 
 .input-field {
@@ -401,8 +421,8 @@ form p a {
 
 .btn-field button {
   flex-basis: 48%;
-  background: #013220;
-  color: #fff;
+  /* background-color: var(--white-color);
+  color: black; */
   height: 4rem;
   border-radius: 2rem;
   border: 0;
@@ -411,9 +431,14 @@ form p a {
   transition: var(--black-color) 1s;
 }
 
-.btn-field button.sign {
-  background: #fff;
-  color: #013220;
+.active {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.normal {
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .hidden {
