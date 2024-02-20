@@ -329,6 +329,8 @@ a {
   background: #daf1de;
   padding: 50px 60px 70px;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
 }
 
 .form-box h1 {
@@ -356,6 +358,7 @@ a {
   border-radius: 3px;
   display: flex;
   align-items: center;
+  border-radius: 50px;
   max-height: 65px;
   transition: max-height 0.5s;
   overflow: hidden;
