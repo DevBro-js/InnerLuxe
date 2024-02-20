@@ -39,6 +39,9 @@ body {
   background-color: var(--secondary-color);
   color: var(--black-color);
   font-size: var(--md-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -199,6 +202,7 @@ a {
   width: max-content;
   transform: translate(-20rem, 18rem);
   opacity: 0;
+  margin: -5%;
   animation: slideRight 800ms ease-in-out both;
 }
 
@@ -214,13 +218,14 @@ a {
   font-size: var(--lg-size);
   color: #daf1de;
   text-align: center;
-  
+  margin: 5% 5% 5% 5%;
 }
 
 .hero__content .hero__content-row-2 > .hero__btn .btn.btn--shop {
   background-color: var(--black-color);
   color: var(--secondary-color);
   margin-left: 23rem;
+  border-radius: 50px;
   box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.8);
 }
 
@@ -242,6 +247,7 @@ a {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   margin: 0rem 3rem;
+  border-radius: 50px;
   transition: background 300ms linear, transform 300ms linear;
 }
 
@@ -298,7 +304,6 @@ a {
 .section-1 .section-1__col-2 .section-1__col-2__paragraph {
   margin-bottom: 3rem;
   font-size: var(--lg-size);
-  
   font-weight: 800;
 }
 
@@ -330,7 +335,7 @@ a {
   padding: 50px 60px 70px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
+  /*border-radius: 50px;*/
 }
 
 .form-box h1 {
