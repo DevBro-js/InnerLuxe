@@ -218,7 +218,6 @@ a {
   font-size: var(--lg-size);
   color: #daf1de;
   text-align: center;
-  
 }
 
 .hero__content .hero__content-row-2 > .hero__btn .btn.btn--shop {
@@ -263,14 +262,14 @@ a {
 /* Animation */
 @keyframes moveUp {
   100% {
-    transform: translate(40rem, 18rem);
+    transform: translate(40rem, 30rem);
     opacity: 1;
   }
 }
 
 @keyframes slideRight {
   100% {
-    transform: translate(40rem, 18rem);
+    transform: translate(48rem, 25rem);
     opacity: 1;
   }
 }
@@ -303,7 +302,7 @@ a {
 .section-1 .section-1__col-2 .section-1__col-2__paragraph {
   margin-bottom: 3rem;
   font-size: var(--lg-size);
-  
+
   font-weight: 800;
 }
 
@@ -361,6 +360,7 @@ a {
   background: #fff;
   margin: 1.5rem 0;
   border-radius: 0.3rem;
+  padding: 0 0 0 2rem;
   display: flex;
   align-items: center;
   border-radius: 5rem;
