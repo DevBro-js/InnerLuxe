@@ -73,6 +73,7 @@ a {
 #wrapper {
   width: 100%;
   height: 100%;
+  /* position: relative; */
 }
 
 .header {
@@ -82,12 +83,7 @@ a {
   overflow: hidden;
 }
 
-.header-2 {
-  height: 10rem;
-  background-color: red;
-}
-
-.header .navbar {
+.navbar {
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -100,6 +96,10 @@ a {
 
   z-index: 20;
   padding: var(--lg-size) calc(var(--lg-size) * 3);
+}
+
+.navbar-color-2 {
+  background-color: black;
 }
 
 .navbar-icon {
@@ -126,7 +126,7 @@ a {
   transform: translateY(-5px) scale(1.1);
 }
 
-.header .navbar .navbar__col-2 {
+.navbar .navbar__col-2 {
   display: flex;
   justify-content: center;
   align-items: center;
