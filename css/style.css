@@ -82,6 +82,11 @@ a {
   overflow: hidden;
 }
 
+.header-2 {
+  height: 10rem;
+  background-color: red;
+}
+
 .header .navbar {
   background-color: transparent;
   display: flex;
@@ -110,10 +115,11 @@ a {
   transition: all 0.4s;
 }
 
-.navbar__col-1 h1 {
+.navbar__col-1 #innerLuxeLogo {
   position: flex;
   font-size: 3rem;
   color: #daf1de;
+  cursor: pointer;
 }
 
 .navbar-icon a:hover {
